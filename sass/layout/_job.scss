@@ -17,7 +17,7 @@
     column-gap: 10px;
 }
 
-.job-social-icon {
+.job-items__social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,45 +27,40 @@
     border-radius: 50%;
     gap: 10px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--brand-color);
+    }
 } 
 
-.job-item-social-icon {
+
+.job-item__social-icon {
     fill: var(--brand-tekst-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.job-item-social-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.job-social-icon:hover,
-.job-social-icon:focus {
-    background-color: var(--brand-color);
-}
-
-
-.job-social-icon:hover .job-item-social-icon,
-.job-social-icon:focus .job-item-social-icon {
+.job-items__social:hover .job-item__social-icon,
+.job-items__social:focus .job-item__social-icon {
     fill: var(--brand-color-three);
 }
 
-.jop-list-item {
+.jop-list__item {
     background-color: var(--brand-color-three);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px; 
 }
 
 
-.jop-list-item-box {
+.jop-list__box {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
 
 
-.job-name {
+.jop-list__name {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -73,7 +68,7 @@
     
 }
 
-.job-titl {
+.jop-list__titl {
     line-height: 1.71;
     color: var(--brand-tekst-color);
     margin-bottom: 16px;

@@ -8,17 +8,16 @@
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.works-items {
+.works-list__item {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: end;
 }
 
-/* overflow: hidden;
-    position: relative; */
 
-.works-name {
+
+.works-list__name {
     display: flex;
     position: absolute;
     justify-content: flex-end;
@@ -26,7 +25,7 @@
    
 }
 
-.work-tekst {
+.works-list__work-tekst {
 font-family: 'Roboto';
 font-weight: 700;
 font-size: 14px;
